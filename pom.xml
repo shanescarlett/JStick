@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.scarlettsystems.java.jstick</groupId>
-    <artifactId>JStick</artifactId>
+    <groupId>net.scarlettsystems.java</groupId>
+    <artifactId>jstick</artifactId>
     <version>0.0.1</version>
 
     <name>JStick</name>
