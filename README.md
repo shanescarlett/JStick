@@ -29,21 +29,21 @@ panel.add(myJoystick);
 Attach a listener to be fired each time motion is detected on the joystick:
 ```java
 myJoystick.addJoystickListener(new JStick.JoystickListener()
-		{
-			@Override
-			public void onJoystickMoved(JStick j)
-			{
-				int x = j.getStickX();
-				int y = j.getStickY();
-				//Do something useful
-			}
+{
+    @Override
+    public void onJoystickMoved(JStick j)
+    {
+        int x = j.getStickX();
+        int y = j.getStickY();
+        //Do something useful
+    }
 
-			@Override
-			public void onJoystickClicked(JStick j)
-			{
+    @Override
+    public void onJoystickClicked(JStick j)
+    {
 
-			}
-		});
+    }
+});
 ```
 There are several other configurable parameters including the colour and dead-zone. See the docs for more information.
 
