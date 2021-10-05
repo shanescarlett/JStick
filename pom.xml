@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.scarlettsystems.java.JStick</groupId>
+    <artifactId>JStick</artifactId>
+    <version>0.0.1</version>
+
+    <name>JStick</name>
+    <description>
+        A Java Swing component that mimics a joystick on the screen.
+    </description>
+    <url>https://github.com/shanescarlett/JStick</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Shane Scarlett</name>
+            <email>scarlettsystems@gmail.com</email>
+            <organization>Scarlett Systems</organization>
+            <organizationUrl>https://scarlettsystems.net</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:shanescarlett/JStick.git</connection>
+        <developerConnection>scm:git:ssh://github.com:shanescarlett/JStick.git</developerConnection>
+        <url>https://github.com/shanescarlett/JStick/tree/master</url>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+</project>
