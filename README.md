@@ -12,7 +12,7 @@ Add JStick to your Maven project by adding the following dependency to ```pom.xm
 <dependency>
     <groupId>net.scarlettsystems.java</groupId>
     <artifactId>jstick</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
