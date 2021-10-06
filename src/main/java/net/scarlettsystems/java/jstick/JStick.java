@@ -41,6 +41,8 @@ public class JStick extends javax.swing.JPanel
 	private final Point clickBeginPoint = new Point(-1, -1);
 	private final ArrayList<JoystickListener> mJoystickListeners;
 
+	private boolean dragFlag = false;
+
 	/**
 	 * The listener interface for receiving joystick events.
 	 */
@@ -76,6 +78,7 @@ public class JStick extends javax.swing.JPanel
 				{
 					clickBeginPoint.x = e.getX();
 					clickBeginPoint.y = e.getY();
+					dragFlag = false;
 				}
 			}
 
@@ -86,6 +89,7 @@ public class JStick extends javax.swing.JPanel
 				{
 					updateThumbPos(e.getX() - clickBeginPoint.x, e.getY() - clickBeginPoint.y);
 					repaintAndTriggerListeners();
+					dragFlag = true;
 				}
 			}
 
@@ -94,10 +98,20 @@ public class JStick extends javax.swing.JPanel
 			{
 				if (SwingUtilities.isLeftMouseButton(e))
 				{
-					centerThumbPad();
-					clickBeginPoint.x = -1;
-					clickBeginPoint.y = -1;
-					repaintAndTriggerListeners();
+					if(dragFlag)
+					{
+						centerThumbPad();
+						clickBeginPoint.x = -1;
+						clickBeginPoint.y = -1;
+						repaintAndTriggerListeners();
+					}
+					else
+					{
+						for(JoystickListener l : mJoystickListeners)
+						{
+							l.onJoystickClicked(JStick.this);
+						}
+					}
 				}
 			}
 		};
