@@ -47,6 +47,9 @@ myJoystick.addJoystickListener(new JStick.JoystickListener()
 ```
 There are several other configurable parameters including the colour and dead-zone. See the docs for more information.
 
+## Version
+The most current stable version is ```0.0.2```
+
 ## Authors
 
 * **Shane Scarlett** - *core development* - [Scarlett Systems](https://scarlettsystems.net)
